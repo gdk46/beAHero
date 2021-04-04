@@ -1,0 +1,29 @@
+<div>
+  <div class="lista-detail"></div>
+
+  <div class="lista-container">
+    <h1 class="lista-title">
+      Lista de <br>
+      <span>Hérois</span>
+    </h1>
+    <p>
+      Pessoas que fazem a diferença!!
+    </p>
+    <a routerLink="/">voltar</a>
+
+    <div class="list-grup-card" *ngFor="let doadores of doador">
+      <div class="lista-content">
+        <div>
+          <img src="../../assets/img/superhero/001-superhero.svg" alt="" width="60" height="60">
+        </div>
+        <div>
+          <p>Nome: {{doadores.nome}}</p>
+          <p>Idade: {{doadores.idade}}</p>
+          <p>Tipo sanguíneo: {{doadores.tipoSanguineo}}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

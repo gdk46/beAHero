@@ -1,0 +1,103 @@
+:root {
+  --font-kiwi-maru: "Kiwi Maru", serif;
+  --font-open-sans: "Open Sans", sans-serif;
+
+  --primary-100: #f55f4c;
+  --primary-200: #ed4b36;
+  --primary-300: #b3000f;
+  --secundary-100: #efda50;
+  --white: #dfdfdf;
+  --black: #212121;
+
+  --padding-app: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: var(--primary-200);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-kiwi-maru);
+}
+
+/*  */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 760px) {
+  :root {
+    --padding-app: 6rem;
+  }
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--grey-lighten-4);
+  padding: 0.25rem 1rem;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out,
+    border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.btn.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
+}
+
+.btn.btn-md {
+  padding: 0.25rem 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+}
+
+.btn.btn-primary-100 {
+  font-family: var(--font-open-sans);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  background-color: var(--primary-100);
+  color: var(--white);
+}
+
+.btn.btn-primary-200 {
+  font-family: var(--font-open-sans);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: var(--white);
+  background-color: var(--primary-200);
+}
+
+.btn.btn-primary-300 {
+  font-family: var(--font-open-sans);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  background-color: var(--primary-300);
+  color: var(--white);
+}

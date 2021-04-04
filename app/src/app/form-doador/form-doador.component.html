@@ -1,0 +1,39 @@
+<div>
+  <div class="form-detail"></div>
+
+  <div class="form-container">
+    <h1 class="form-title">
+      Você é o
+      <br>
+      <span>tipo</span> certo de
+      <br>
+      <span>Alguém</span>
+    </h1>
+
+
+    <form>
+      <div class="form-content">
+        <input type="text" name="nome" [(ngModel)]="doador.nome" placeholder="Nome">
+        <input type="text" name="idade" [(ngModel)]="doador.idade" placeholder="Idade">
+        <select name="tipoSanguineo" [(ngModel)]="doador.tipoSanguineo">
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+        </select>
+      </div>
+
+      <button class="btn btn-sm btn-primary-300" (click)="save()">
+        Me cadastre
+      </button>
+    </form>
+    <a routerLink="/" class="btn btn-sm btn-primary-100">
+      voltar
+    </a>
+  </div>
+
+</div>
